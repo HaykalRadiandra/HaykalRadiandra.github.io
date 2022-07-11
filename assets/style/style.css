@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Source+Code+Pro:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'quicksand', Arial, Helvetica, serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:link {
+  color: white;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  padding: 10px;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  text-decoration: underline;
+  box-shadow: 2px 8px 8px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px 0px 20px 0px;
+}
+
+nav a:active {
+  color: aqua;
+}
+
+.letter::first-letter {
+  cursor: text;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2, h3 {
+  color: #00a2c6;
+}
+
+.profile header {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* menerapkan ukuran pada gambar */
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center ;
+}
+
+.profile img {
+  width: 200px;
+}
+
+/* Menerapkan card style pada element <article> */
+
+.card {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2) ;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Menerapkan Jumbotron dan Navigasi pada header */
+
+.jumbotron {
+  padding:60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+header nav {
+  background-color: #00a2c6;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+ul {
+  margin: 20px;
+  padding-left: 40px;
+  
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 25px;
+}
+
+/* Menerapkan Float pada #content dan aside */
+
+#content {
+  float: left;
+  width: 75%;
+  font-size: 15px;
+  text-align: justify;
+}
+
+aside {
+  width: 25%;
+  float: right;
+  padding-left: 20px;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+
+
+/* Menetapkan rules pada ukuran layar tertentu */
+
+@media  (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100% ;
+    padding: 0;
+  }
+}
+
+/* Membuat Sticky Navigation */
+
+header {
+  display: inline;
+}
